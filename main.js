@@ -18,8 +18,11 @@ function startGame(){
         setTimeout(function(){document.getElementById("st" + i).classList.add("fade-in")}, 100 + 50 * i);
     }
 
-    document.getElementById("game-container").classList.add("move-down");
-    
+    if (window.innerWidth < 1000) {
+        document.getElementById("game-container").classList.add("move-down-mobile");}
+    else {
+        document.getElementById("game-container").classList.add("move-down");}
+
     var topLeftCorner = document.getElementById("st1");
     var topRightCorner = document.getElementById("st4");
     var bottomLeftCorner = document.getElementById("st16");

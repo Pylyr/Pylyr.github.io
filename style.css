@@ -38,6 +38,10 @@ body {
     animation: move 1.5s ease forwards;
 }
 
+.move-down-mobile {
+    animation: move-mobile 1.5s ease forwards;
+}
+
 @keyframes appear{
     0% {opacity: 0}
     100% {opacity: 1}
@@ -52,7 +56,15 @@ body {
     0% {    
     }
     100% {
-        transform: translate(-50%, 0px);
+        transform: translate(-50%, -10%);
+    }
+}
+
+@keyframes move-mobile {
+    0% {    
+    }
+    100% {
+        transform: translate(-50%, 0%);
     }
 }
 
@@ -61,7 +73,7 @@ body {
     height: 400px;
     width: 400px;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -20%);
     border: 5px ridge gray;
 }
 
@@ -105,11 +117,13 @@ body {
 }
 
 #instructions-container {
-    max-height: 170px;
+    height: 10%;
+    text-align: center;
+    min-height: 115px;
 }
 
 #instructions {
-    text-align: center;
+    vertical-align: middle;
     visibility: hidden;
     font-size: 40px;
     font-family: Rokkitt;
@@ -123,5 +137,5 @@ body {
     width: 100%;
     height: fit-content;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
