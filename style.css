@@ -1,8 +1,9 @@
 body {
     /* background-color: #fafafa; */
-    background: url("background.jpeg") center center fixed;
+    background: url("background.jpeg") center center;
     background-repeat: repeat;
     margin: 0;
+    overflow-x:hidden;
 }
 
 #header {
