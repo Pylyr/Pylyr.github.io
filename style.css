@@ -70,16 +70,15 @@ body {
 
 #game-container {
     position: relative;
-    max-height: 500px;
-    max-width: 500px;
-    height: 60vmax;
-    width: 60vmax;
-    min-height: 300px;
-    min-width: 300px;
+    height: 400px;
+    width: 400px;
+    max-width: 60vmin;
+    max-height: 60vmin;
     left: 50%;
     transform: translate(-50%, -20%);
     border: 5px ridge gray;
 }
+
 
 #sticker-container {
     display: grid;
@@ -87,8 +86,6 @@ body {
     position: absolute;
     height: 90%;
     width: 90%;
-    max-height: 380px;
-    max-width: 380px;
     top: 50%;
     left: 50%;
     transform: translate(-49%, -49%);
@@ -97,6 +94,8 @@ body {
 }
 
 .sticker {
+    user-select: none;
+    pointer-events: none;
     width: 100%;
     max-height: 100%;
     opacity: 0;
