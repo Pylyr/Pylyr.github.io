@@ -73,6 +73,7 @@ function newGame(){
     setTimeout(function(){
         for (let i = 0; i < 4; i++){
             corners[i].src = "greensticker.png";
+            corners[i].style.pointerEvents = "auto";
             corners[i].onclick = function() { selectCorner(i) };
         };
     }, time);
@@ -83,6 +84,7 @@ function selectCorner(sel){
 
     for (let i = 0; i < 4; i++){
         corners[i].src = "yellowsticker.png";
+        corners[i].style.pointerEvents = "none";
         corners[i].onclick = function(){};
     }
 
