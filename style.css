@@ -7,7 +7,7 @@ body {
 
 #header {
     overflow: hidden;
-    height: 150px;
+    height: 15vmin;
     background-image: url("2.png");
     background-repeat: cover;
     display: flex;
@@ -20,7 +20,7 @@ body {
 #title {
     color: whitesmoke;
     font-family: Rokkitt;
-    font-size: 350%;
+    font-size: 8vmin;
     text-shadow: 1px 1px 0px black;
 }
 
