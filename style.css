@@ -70,8 +70,8 @@ body {
 
 #game-container {
     position: relative;
-    max-height: 50vmin;
-    max-width: 50vmin;
+    max-height: 500px;
+    max-width: 500px;
     height: 60vmax;
     width: 60vmax;
     min-height: 300px;
