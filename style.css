@@ -142,12 +142,12 @@ body {
     text-align: center;
 }
 
-#fb-like-button {
-    margin-bottom: -3%;
-}
 
 #credit {
-    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #game {
