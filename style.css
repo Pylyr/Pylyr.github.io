@@ -70,12 +70,12 @@ body {
 
 #game-container {
     position: relative;
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 500px;
+    max-width: 500px;
     height: 50vmin;
     width: 50vmin;
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 300px;
+    min-width: 300px;
     left: 50%;
     transform: translate(-50%, -20%);
     border: 5px ridge gray;
@@ -93,7 +93,7 @@ body {
     left: 50%;
     transform: translate(-49%, -49%);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
 
 .sticker {
@@ -123,18 +123,19 @@ body {
 }
 
 #instructions-container {
-    height: 10%;
     text-align: center;
-    min-height: 115px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    height: 15vmin;
 }
 
 #instructions {
     vertical-align: middle;
     visibility: hidden;
-    font-size: 40px;
+    font-size: 5vmin;
     font-family: Rokkitt;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #fb-root-container {
@@ -145,5 +146,5 @@ body {
     width: 100%;
     height: fit-content;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 3vmin;
 }
