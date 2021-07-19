@@ -7,7 +7,7 @@ body {
 
 #header {
     overflow: hidden;
-    height: 15vmax;
+    height: 15%;
     background-image: url("2.png");
     background-repeat: cover;
     display: flex;
@@ -70,8 +70,12 @@ body {
 
 #game-container {
     position: relative;
-    height: 400px;
-    width: 400px;
+    /* min-height: auto;
+    min-width: none; */
+    max-height: 400px;
+    max-width: 400px;
+    height: 50vmax;
+    width: 50vmax;
     left: 50%;
     transform: translate(-50%, -20%);
     border: 5px ridge gray;
