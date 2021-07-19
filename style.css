@@ -7,7 +7,7 @@ body {
 
 #header {
     overflow: hidden;
-    height: 150px;
+    height: 15%;
     background-image: url("2.png");
     background-repeat: cover;
     display: flex;
@@ -20,7 +20,7 @@ body {
 #title {
     color: whitesmoke;
     font-family: Rokkitt;
-    font-size: 350%;
+    font-size: 4vmax;
     text-shadow: 1px 1px 0px black;
 }
 
@@ -70,8 +70,11 @@ body {
 
 #game-container {
     position: relative;
-    height: 400px;
-    width: 400px;
+    max-height: 400px;
+    max-width: 400px;
+    height: 60vmin;
+    width: 60vmin;
+
     left: 50%;
     transform: translate(-50%, -20%);
     border: 5px ridge gray;
@@ -85,14 +88,14 @@ body {
     width: 90%;
     top: 50%;
     left: 50%;
-    transform: translate(-49%, -48%);
+    transform: translate(-49%, -50%);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 1vmin;
 }
 
 .sticker {
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 100%;
     opacity: 0;
 }
 
@@ -106,7 +109,7 @@ body {
     position: absolute;
     font-size: 2em;
     color: white;
-    padding: 15px 40px;
+    padding: 3% 10%;
     text-align: center;
     border-radius: 10px;
     z-index: 2;
@@ -117,15 +120,16 @@ body {
 }
 
 #instructions-container {
-    height: 10%;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    height: 15vmin;
     text-align: center;
-    min-height: 115px;
 }
 
 #instructions {
     vertical-align: middle;
     visibility: hidden;
-    font-size: 40px;
+    font-size: 5vmin;
     font-family: Rokkitt;
 }
 
@@ -137,5 +141,5 @@ body {
     width: 100%;
     height: fit-content;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 3vmin;
 }
