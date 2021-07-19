@@ -138,21 +138,25 @@ body {
     margin-right: 5%;
 }
 
+#game {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    margin-bottom: 3vmin;
+}
+
 #fb-root-container {
     text-align: center;
 }
 
 
 #credit {
-    position: fixed;
+    position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#game {
-    width: 100%;
-    height: fit-content;
-    display: block;
-    margin-bottom: 3vmin;
+#credit-link{
+    color: blue;
 }
