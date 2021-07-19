@@ -142,18 +142,20 @@ body {
     width: 100%;
     height: fit-content;
     display: block;
-    margin-bottom: 3vmin;
+    margin-bottom: 5vmin;
 }
 
 #fb-root-container {
     text-align: center;
 }
 
+#fb-like-button {
+    margin-bottom: 0;
+}
 
 #credit {
-    margin-top: 100px;
-    position: absolute;
     width: 100%;
+    max-height: 100px;
     text-align: center;
     bottom: 0%;
     font-size: 12px;
