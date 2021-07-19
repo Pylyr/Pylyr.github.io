@@ -89,8 +89,8 @@ function selectCorner(sel){
     InstructionsFade(time);
 
 
-    let disappear = [1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7]; 
-    let moves = [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1];
+    // let disappear = [1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7]; 
+    // let moves = [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1];
     // let disappear = [1, 16, 13, 5, 12, 4, 10, 13, 15, 14, 9, 8, 11, 6, 7, 3];
     // let moves = [1, 3, 2, 5, 3, 2, 6, 1, 3, 5, 1, 2, 5, 5, 3, 1];
     let wordMove;
