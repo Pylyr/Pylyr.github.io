@@ -105,14 +105,13 @@ body {
 #start-btn {
     background-color: #4CAF50;
     font-family: Rokkitt;
-    /* border: 2px solid black; */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
     font-size: 2em;
     color: white;
-    padding: 15px 40px;
+    padding: 5% 15%;
     text-align: center;
     border-radius: 10px;
     z-index: 2;
@@ -146,11 +145,10 @@ body {
 }
 
 #fb-root-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-}
-
-#fb-like-button {
-    margin-bottom: 0;
 }
 
 #credit {
