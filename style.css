@@ -70,10 +70,10 @@ body {
 
 #game-container {
     position: relative;
-    max-height: 500px;
-    max-width: 500px;
-    height: 50vmin;
-    width: 50vmin;
+    max-height: 50vmin;
+    max-width: 50vmin;
+    height: 60vmax;
+    width: 60vmax;
     min-height: 300px;
     min-width: 300px;
     left: 50%;
@@ -93,7 +93,7 @@ body {
     left: 50%;
     transform: translate(-49%, -49%);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .sticker {
