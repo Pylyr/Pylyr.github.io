@@ -62,7 +62,7 @@ function startGame(){
     time += 1000;
     setTimeout(function(){
         instructions.classList.remove("fade-out");
-        instructions.innerHTML = "You may go over the same cards, you may not move diagonally.";
+        instructions.innerHTML = "You may go over the same cards, but not move diagonally.";
         instructions.classList.add("fade-in");
     }, time);
 
