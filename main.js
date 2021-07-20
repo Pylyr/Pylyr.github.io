@@ -72,7 +72,7 @@ function startGame(){
     time += 1000;
     setTimeout(function(){
         instructions.classList.remove("fade-out");
-        instructions.innerHTML = "You do not need to press anything.";
+        instructions.innerHTML = "No need to press anything, just follow with your eyes.";
         instructions.classList.add("fade-in");
     }, time);
 
@@ -111,10 +111,10 @@ function selectCorner(sel){
     InstructionsFade(time);
 
     let listOfPaths = [
-                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
-                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
-                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
-                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
+                    [[1, 9, 5, 16, 4, 15, 3, 13, 14, 12, 2, 11, 8, 6, 7], [1, 6, 4, 5, 2, 1, 4, 2, 5, 4, 2, 3, 5, 2, 1]],
+                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7], [1, 5, 4, 2, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
+                    [[1, 8, 13, 5, 4, 2, 15, 14, 12, 16, 9, 7, 10, 11, 6], [1, 7, 5, 2, 3, 4, 5, 3, 2, 4, 3, 4, 3, 1, 1]]
+                    [[1, 15, 2, 12, 16, 13, 9, 14, 3, 11, 8, 10, 7, 4, 5], [1, 4, 7, 6, 4, 5, 6, 3, 1, 2, 5, 4, 3, 1, 1]],
                     ];
 
     [disappear, moves] = listOfPaths[Math.floor(Math.random()*listOfPaths.length)];
