@@ -10,6 +10,16 @@ function InstructionsFade(time){
     }, time);
 }
 
+function turnInstruction(inp, turn){
+    let conver = {1:4, 2:5, 3:12, 4:13, 5:14, 6:11, 7:6, 8:3, 9:2, 10:7, 11:10, 12:15, 13:16, 14:9, 15:8, 16:1};
+    for (let i = 1; i <= turn; i++){
+        for (let j = 0; j <= 15; j++){
+            inp[j] = conver[inp[j]];
+        }
+    }
+    return inp;
+}  
+
 function startGame(){
     instructions = document.getElementById("instructions");
     button = document.getElementById("start-btn");
@@ -52,7 +62,17 @@ function startGame(){
     time += 1000;
     setTimeout(function(){
         instructions.classList.remove("fade-out");
-        instructions.innerHTML = "You can help track your current sticker with your mouse.";
+        instructions.innerHTML = "You may go over the same cards, you may not move diagonally.";
+        instructions.classList.add("fade-in");
+    }, time);
+
+    time += 2500;
+    InstructionsFade(time);
+
+    time += 1000;
+    setTimeout(function(){
+        instructions.classList.remove("fade-out");
+        instructions.innerHTML = "You do not need to press anything.";
         instructions.classList.add("fade-in");
     }, time);
 
@@ -90,11 +110,15 @@ function selectCorner(sel){
 
     InstructionsFade(time);
 
+    let listOfPaths = [
+                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 8], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
+                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 8], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
+                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 8], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
+                    [[1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 8], [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1]],
+                    ];
 
-    let disappear = [1, 12, 4, 16, 13, 2, 14, 5, 3, 15, 10, 11, 9, 6, 7]; 
-    let moves = [1, 5, 4, 4, 1, 3, 4, 1, 2, 4, 1, 3, 2, 1, 1];
-    // let disappear = [1, 16, 13, 5, 12, 4, 10, 13, 15, 14, 9, 8, 11, 6, 7, 3];
-    // let moves = [1, 3, 2, 5, 3, 2, 6, 1, 3, 5, 1, 2, 5, 5, 3, 1];
+    [disappear, moves] = listOfPaths[Math.floor(Math.random()*listOfPaths.length)];
+    disappear = turnInstruction(disappear, sel);
     let wordMove;
     time += 800;
     
@@ -129,15 +153,15 @@ function selectCorner(sel){
         button.classList.add("fade-in");
         button.onclick = function() { 
             time = 0;
-            button.style.display = "none";
-            for (let i = 1; i <= 16; i++){
-                time += 50;
-                setTimeout(function(){
-                    document.getElementById("st" + i).classList.remove("fade-out");
-                    document.getElementById("st" + i).classList.add("fade-in")}, time);
-            }
-            time += 400;
-            setTimeout(function(){ newGame() }, time) };
+            // button.style.display = "none";
+            // for (let i = 1; i <= 16; i++){
+            //     time += 50;
+            //     setTimeout(function(){
+            //         document.getElementById("st" + i).classList.remove("fade-out");
+            //         document.getElementById("st" + i).classList.add("fade-in")}, time);
+            // }
+            // time += 400;
+            setTimeout(function(){ location.reload(); return false; }, time) };
     }, time)
 }
 
